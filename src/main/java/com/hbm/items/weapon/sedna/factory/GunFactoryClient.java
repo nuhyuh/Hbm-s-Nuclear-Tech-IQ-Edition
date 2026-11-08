@@ -222,6 +222,8 @@ public class GunFactoryClient {
 		rocket_sam.setRenderer(LegoClient.RENDER_SAM);
 		rocket_sam_advanced.setRenderer(LegoClient.RENDER_SAM2);
 		XFactoryTurret.bullet_airburst_pellet.setRenderer(LegoClient.RENDER_FLECHETTE_BULLET);
+		XFactoryTurret.bullet_hei.setRenderer(LegoClient.RENDER_HE_BULLET);
+		XFactoryTurret.bullet_airburst.setRenderer(LegoClient.RENDER_SM_BULLET);
 		setRendererBulk(LegoClient.RENDER_RPZB, rocket_ncrpa_steer);
 		setRendererBulk(LegoClient.RENDER_RPZB, rocket_ncrpa);
 		

@@ -4203,8 +4203,8 @@ public class ModItems {
 		ammo_railgun = new ItemAmmoRailgun().setUnlocalizedName("ammo_railgun");
 		ammo_sam = new Item().setUnlocalizedName("ammo_sam").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":missile_anti_ballistic");
 		ammo_sam_advanced = new Item().setUnlocalizedName("ammo_sam_advanced").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":missile_anti_ballistic");
-		ammo_35mm_hei = new Item().setUnlocalizedName("ammo_35mm_hei").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":ammo_standard");
-		ammo_35mm_airburst = new Item().setUnlocalizedName("ammo_35mm_airburst").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":ammo_standard");
+		ammo_35mm_hei = new Item().setUnlocalizedName("ammo_35mm_hei").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":ammo_shell_explosive");
+		ammo_35mm_airburst = new Item().setUnlocalizedName("ammo_35mm_airburst").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":ammo_35mm_airburst");
 
 		gun_b92_ammo = new GunB92Cell().setUnlocalizedName("gun_b92_ammo").setMaxStackSize(1).setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":gun_b92_ammo_alt");
 		gun_b92 = new GunB92().setUnlocalizedName("gun_b92").setCreativeTab(MainRegistry.weaponTab).setTextureName(RefStrings.MODID + ":gun_b92");

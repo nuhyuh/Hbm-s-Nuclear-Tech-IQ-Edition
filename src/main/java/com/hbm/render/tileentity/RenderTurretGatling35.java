@@ -34,7 +34,7 @@ public class RenderTurretGatling35 extends RenderTurretBase implements IItemRend
 		// Base (static)
 		ResourceManager.turret_gatling35.renderPart("Base");
 
-		double yaw = -Math.toDegrees(turret.lastRotationYaw + (turret.rotationYaw - turret.lastRotationYaw) * interp) - 90D;
+		double yaw = 180D - Math.toDegrees(turret.lastRotationYaw + (turret.rotationYaw - turret.lastRotationYaw) * interp);
 		double pitch = Math.toDegrees(turret.lastRotationPitch + (turret.rotationPitch - turret.lastRotationPitch) * interp);
 		float spin = turret.lastBarrelSpin + (turret.barrelSpin - turret.lastBarrelSpin) * interp;
 
@@ -45,7 +45,7 @@ public class RenderTurretGatling35 extends RenderTurretBase implements IItemRend
 
 		// Pitch assembly
 		GL11.glTranslated(0, PIVOT_Y, 0);
-		GL11.glRotated(pitch, 0, 0, 1);
+		GL11.glRotated(pitch, 1, 0, 0);
 		GL11.glTranslated(0, -PIVOT_Y, 0);
 
 		ResourceManager.turret_gatling35.renderPart("GunPivot");
