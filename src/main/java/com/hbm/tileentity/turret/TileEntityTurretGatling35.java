@@ -98,6 +98,7 @@ public class TileEntityTurretGatling35 extends TileEntityTurretBaseNT {
 	int fireTimer = 0;
 	public float barrelSpin = 0F;
 	public float lastBarrelSpin = 0F;
+	public int lastFiredTube = 0;
 
 	@Override
 	public void updateEntity() {
@@ -134,9 +135,9 @@ public class TileEntityTurretGatling35 extends TileEntityTurretBaseNT {
 	public void spawnBullet(BulletConfig bullet, float baseDamage) {
 
 		Vec3 pos = this.getTurretPos();
-		Vec3 vec = Vec3.createVectorHelper(this.getBarrelLength(), 0, 0);
-		vec.rotateAroundZ((float) -this.rotationPitch);
-		vec.rotateAroundY((float) -(this.rotationYaw + Math.PI * 0.5));
+		Vec3 vec = Vec3.createVectorHelper(0, 0, -this.getBarrelLength());
+		vec.rotateAroundX((float) this.rotationPitch);
+		vec.rotateAroundY((float) (Math.PI - this.rotationYaw));
 
 		EntityBulletBaseMK4 proj = new EntityBulletBaseMK4(worldObj, bullet, baseDamage, bullet.spread, (float) rotationYaw, (float) rotationPitch);
 		proj.setPositionAndRotation(pos.xCoord + vec.xCoord, pos.yCoord + vec.yCoord, pos.zCoord + vec.zCoord, proj.rotationYaw, proj.rotationPitch);
